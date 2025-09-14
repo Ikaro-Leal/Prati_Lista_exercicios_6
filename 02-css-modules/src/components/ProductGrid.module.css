@@ -1,0 +1,27 @@
+.productGrid {
+  display: grid;
+  gap: var(--spacing-lg);
+  /* Mobile-first: 1 coluna por padrão */
+  grid-template-columns: 1fr;
+}
+
+/* Breakpoint para 2 colunas */
+@media (min-width: 481px) {
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Breakpoint para 3 colunas */
+@media (min-width: 769px) {
+  .productGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Breakpoint para 4 colunas */
+@media (min-width: 1025px) {
+  .productGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

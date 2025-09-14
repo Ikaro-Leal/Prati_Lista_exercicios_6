@@ -1,0 +1,5 @@
+.mainContent {
+  padding-top: 80px; /* Altura aproximada da navbar para não ficar escondido */
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}

@@ -1,0 +1,68 @@
+/* ------------------------- */
+/* Navbar */
+/* ------------------------- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  z-index: 1000;
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.25rem 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.logo h2 {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.themeToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+  transition: color var(--transition-duration);
+}
+
+.themeToggle:hover {
+  color: var(--color-text-primary);
+}
+
+.cartBadge {
+  position: relative;
+  color: var(--color-text-secondary);
+}
+
+.cartCount {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--color-primary);
+  color: var(--color-primary-contrast);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}

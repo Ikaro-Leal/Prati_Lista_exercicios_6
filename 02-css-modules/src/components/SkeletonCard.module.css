@@ -1,0 +1,79 @@
+/* ------------------------- */
+/* Skeleton Loading */
+/* ------------------------- */
+.skeletonCard {
+  /* Replicando o layout do product-card para evitar layout shift */
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.skeleton {
+  background-color: var(--color-border);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animação de brilho */
+.skeleton::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: shimmer 1.5s infinite;
+}
+
+/* Aplicando a animação para o tema escuro */
+[data-theme='dark'] .skeleton::after {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+}
+
+@keyframes shimmer {
+  100% {
+    left: 150%;
+  }
+}
+
+/* Dimensionando os elementos do skeleton */
+.skeletonImage {
+  aspect-ratio: 1 / 1;
+}
+
+.skeletonContent {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.skeletonTitle {
+  height: 2.5em; /* Mesma altura do título real */
+  border-radius: var(--border-radius-sm);
+}
+
+.skeletonFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.skeletonText {
+  height: 1.5em; /* Altura do preço/rating */
+  width: 40%;
+  border-radius: var(--border-radius-sm);
+}
+
+.skeletonButton {
+  height: 40px; /* Altura aproximada do botão */
+  width: 100%;
+  margin-top: auto;
+  border-radius: var(--border-radius-sm);
+}
