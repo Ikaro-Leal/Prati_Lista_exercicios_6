@@ -6,7 +6,7 @@ O projeto consiste na criação de uma mesma aplicação web ("Mini Loja") com *
 
 ---
 
-### ✨ Tecnologias e Metodologias Utilizadas
+### Tecnologias e Metodologias Utilizadas
 
 - **ReactJS**: Para a construção da interface de usuário de forma componentizada e declarativa.
 - **Vite**: Como ferramenta de build e servidor de desenvolvimento rápido.
@@ -19,7 +19,7 @@ O projeto consiste na criação de uma mesma aplicação web ("Mini Loja") com *
 
 ---
 
-### 🚀 Funcionalidades Comuns (Implementadas em todas as 4 versões)
+### Funcionalidades Comuns (Implementadas em todas as 4 versões)
 
 - **Layout Responsivo**: A interface se adapta a 4 breakpoints (mobile, tablet e desktop) com a abordagem Mobile-First.
 - **Dark Mode**: Toggle de tema (claro/escuro) funcional.
@@ -34,7 +34,7 @@ O projeto consiste na criação de uma mesma aplicação web ("Mini Loja") com *
 
 ---
 
-### 📂 Estrutura do Repositório
+### Estrutura do Repositório
 
 Este repositório segue um formato de **multiplos repositórios**, onde cada uma das quatro versões é um projeto Vite completo e independente.
 
@@ -49,7 +49,7 @@ Este repositório segue um formato de **multiplos repositórios**, onde cada uma
 
 ---
 
-### 🛠️ Como Executar uma Versão Localmente
+### Como Executar uma Versão Localmente
 
 #### Pré-requisitos
 * **Node.js**: Versão LTS (18.x ou superior).
